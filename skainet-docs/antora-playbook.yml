@@ -1,0 +1,20 @@
+site:
+  title: Skainet Docs
+  url: https://example.com/skainet-docs
+  start_page: skainet::landing.adoc
+
+content:
+  sources:
+    - url: .
+      branches: HEAD
+      start_path: skainet-docs/docs
+
+ui:
+  bundle:
+    url: ../build/ui-bundle.zip
+    snapshot: true
+
+asciidoc:
+  attributes:
+    experimental: ''
+    page-pagination: ''

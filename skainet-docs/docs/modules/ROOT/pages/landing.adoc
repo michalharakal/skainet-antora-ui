@@ -1,0 +1,56 @@
+:page-type: landing-page
+:product-name: Skainet
+:hero-image: https://images.example.com/skainet/control-hub.png
+:hero-alt: Skainet command hub dashboard
+:cta-url: tutorials/first-boot.html
+:cta-label: Launch the core
+:meta-title: Skainet — Autonomous orchestration for resilient fleets
+:meta-description: Skainet coordinates autonomous systems with predictive analytics, adaptive safeguards, and human-centered controls.
+
+[.hero-section, hero-image="{hero-image}", hero-alt="{hero-alt}", cta-url="{cta-url}", cta-label="{cta-label}"]
+== Command every mission with Skainet
+
+Skainet unifies sensing, decisioning, and actuation so operators can coordinate autonomous fleets with assurance and speed.
+
+image::{hero-image}[role=hero-illustration, alt="{hero-alt}"]
+
+[.value-proposition-grid]
+== Why teams trust Skainet
+
+[.value-card.icon-orbit.accent-emerald]
+=== Adaptive situational awareness
+Stream telemetry from edge devices, satellites, and control rooms into one adaptive knowledge graph that highlights anomalies before they escalate.
+
+[.value-card.icon-core.accent-violet]
+=== Decision core that learns
+Deploy reinforcement-trained policies that blend deterministic safety rails with real-time learning to handle uncertain environments.
+
+[.value-card.icon-shield.accent-amber]
+=== Continuous assurance
+Auto-issue evidence packs for compliance and safety reviews with lineage tracking for every command, response, and override.
+
+[.value-card.icon-circuit.accent-rose]
+=== Integrates with your stack
+Connect Skainet to existing SOC tooling, CI pipelines, and mission-control dashboards using our open control API.
+
+[.call-to-action]
+== Start the flight check
+
+https://console.skainet.example.com/signup
+
+Need a guided rollout? xref:how-to/calibrate-sensors.adoc[Calibrate your sensors] or explore xref:reference/control-api.adoc[the control API] for integrations.
+
+== Field guides
+
+[%unbreakable]
+=== Launch Skainet core in minutes
+
+Follow the xref:tutorials/first-boot.adoc[first boot tutorial] to commission your first cluster with guardrails applied.
+
+=== Calibrate the perception stack
+
+Run the xref:how-to/calibrate-sensors.adoc[sensor calibration guide] to synchronize edge devices with headquarters.
+
+=== Understand the decision core
+
+Review the xref:explanation/decision-core.adoc[decision core overview] to see how Skainet balances autonomy and human control.

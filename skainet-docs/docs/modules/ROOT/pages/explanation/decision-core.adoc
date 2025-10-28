@@ -1,0 +1,28 @@
+= Decision Core Overview
+:page-subtitle: Explanation
+
+[abstract]
+Understand how Skainet blends neural inference, rule-based safeguards, and ethical governors to provide reliable, auditable decisions.
+
+== Architectural Layers
+
+=== Inference Engines
+
+Skainet hosts specialized neural graphs for threat detection, logistics planning, and anomaly prediction. Each graph runs on dedicated compute pods instrumented with telemetry hooks.
+
+=== Safety Cortex
+
+Rule-based guardrails evaluate inference results before actions are issued. Policies are versioned, testable, and support staged rollouts.
+
+=== Ethics Governor
+
+The ethics layer enforces organizational compliance constraints. It logs every override with contextual reasoning for audit trails.
+
+== Data Flow
+
+Sensor input streams enter the ingestion mesh, pass through normalization filters, then feed the active inference engines. Output decisions fan out to actuators via encrypted channels with acknowledgement tracking.
+
+== Further Reading
+
+* xref:how-to/calibrate-sensors.adoc[Sensor calibration guide] for preparing clean inputs.
+* xref:reference/control-api.adoc[Control API] to integrate the decision core into external workflows.

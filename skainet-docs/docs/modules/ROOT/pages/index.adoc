@@ -1,0 +1,37 @@
+= Skainet Documentation Hub
+:doctype: book
+:idprefix:
+:idseparator: -
+:landing-page:
+:page-subtitle: Deploy, operate, and evolve Skainet intelligence.
+:page-summary: Follow the Divio documentation flow to guide operators from first start to deep architectural insights and stable production operations.
+:page-cta-label: Start the guided tutorial
+:page-cta-url: tutorials/first-boot.html
+
+[abstract]
+Welcome to the Skainet documentation portal. Begin with hands-on tutorials to spin up your first control node, jump into practical guides to solve operational tasks, explore the architecture behind the neural decision core, and consult API references when integrating with external systems.
+
+== Your Documentation Map
+
+The Skainet docs are organized around the Divio documentation system:
+
+* Tutorials – step-by-step journeys that get you to a working result quickly.
+* How-to Guides – task-focused instructions for day-to-day operations.
+* Explanation – background and conceptual knowledge to understand the why.
+* Reference – authoritative technical specifications and API contracts.
+
+=== Tutorials
+
+Kick off with the xref:tutorials/first-boot.adoc[Boot Skainet Core tutorial] to provision an intelligence cluster, connect field units, and confirm telemetry flow.
+
+=== How-to Guides
+
+Use the xref:how-to/calibrate-sensors.adoc[Calibrate Sensor Array guide] to keep your sentinel grid performing with precision in live environments.
+
+=== Explanation
+
+Gain context from xref:explanation/decision-core.adoc[Decision Core Overview], covering how inference modules, safety switches, and ethics circuits interact.
+
+=== Reference
+
+Integrate Skainet into automation pipelines using the xref:reference/control-api.adoc[Control API Reference], detailing endpoints, payloads, and example responses.

@@ -1,0 +1,17 @@
+{{#if cta}}
+<section class="landing-cta">
+  <div class="landing-cta__card">
+{{#if cta.heading}}
+    <h2 class="landing-cta__title">{{cta.heading}}</h2>
+{{/if}}
+{{#if cta.summary}}
+    <div class="landing-cta__summary">{{{cta.summary}}}</div>
+{{/if}}
+{{#if cta.button}}
+    <div class="landing-cta__actions">
+      <a class="landing-cta__button landing-cta__button--primary" href="{{relativize cta.button.url}}">{{cta.button.label}}</a>
+    </div>
+{{/if}}
+  </div>
+</section>
+{{/if}}

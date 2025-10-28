@@ -1,0 +1,30 @@
+{{#if values.cards}}
+<section class="landing-values">
+  <div class="landing-values__header">
+{{#if values.heading}}
+    <h2 class="landing-values__title">{{values.heading}}</h2>
+{{/if}}
+{{#if values.summary}}
+    <div class="landing-values__summary">{{{values.summary}}}</div>
+{{/if}}
+  </div>
+  <div class="landing-values__grid">
+{{#each values.cards as |card|}}
+    <article class="landing-value landing-value--accent-{{card.accent}}">
+{{#if card.badge}}
+      <div class="landing-value__icon" aria-hidden="true">{{card.badge}}</div>
+{{/if}}
+{{#if card.title}}
+      <h3 class="landing-value__title">{{card.title}}</h3>
+{{/if}}
+{{#if card.icon}}
+      <p class="landing-value__eyebrow">{{card.icon}}</p>
+{{/if}}
+{{#if card.body}}
+      <div class="landing-value__summary">{{{card.body}}}</div>
+{{/if}}
+    </article>
+{{/each}}
+  </div>
+</section>
+{{/if}}

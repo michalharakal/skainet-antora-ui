@@ -1,0 +1,49 @@
+= Landing page
+:page-type: landing-page
+:product-name: Project XYZ
+:hero-image: multirepo-ssg.svg
+:hero-alt: Illustration of distributed documentation workflows
+:cta-url: /xyz/5.2/index.html
+:cta-label: Explore documentation
+:meta-title: Project XYZ — orchestrate, observe, outpace
+:meta-description: Project XYZ helps platform teams ship confidently with composable automation, unified telemetry, and enterprise guardrails.
+
+[.hero-section, hero-image="{hero-image}", hero-alt="{hero-alt}", cta-url="{cta-url}", cta-label="{cta-label}"]
+== Lead every release with Project XYZ
+
+Platform teams trust Project XYZ to orchestrate cloud workloads, enforce policy guardrails, and surface real-time telemetry across every environment.
+
+image::{hero-image}[role=hero-illustration, alt="{hero-alt}"]
+
+[.value-proposition-grid]
+== Super features 
+
+[.value-card.icon-blueprint.accent-violet]
+=== Expensive
+Blueprints bundle CI/CD templates, infrastructure modules, and security policies so teams can ship compliant services in hours, not weeks.
+
+[.value-card.icon-shield.accent-emerald]
+=== Quick
+Quick breaks.
+
+[.call-to-action]
+== Start wasting money
+
+https://example.org/start
+
+Ready to go deeper? xref:xyz::index.adoc[Browse the full docs] or join our monthly release briefing to see what’s next.
+
+== Explore more resources
+
+[%unbreakable]
+=== Get productive in minutes
+
+Walk through the xref:xyz::index.adoc[Quickstart] to deploy a sandbox cluster and wire up your first blueprint.
+
+=== Stay ahead of the roadmap
+
+Sign up for the monthly changelog briefing to preview upcoming features and learn from other platform teams.
+
+=== Embed automation everywhere
+
+Bookmark the xref:xyz::index.adoc#some-code[API code samples] to integrate workflows into CI pipelines and internal portals.

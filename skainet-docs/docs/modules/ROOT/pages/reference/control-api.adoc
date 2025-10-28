@@ -1,0 +1,65 @@
+= Control API Reference
+:page-subtitle: Reference
+
+[abstract]
+This reference lists the REST endpoints for orchestrating Skainet clusters, managing field units, and triggering calibration jobs.
+
+== Authentication
+
+All requests require a bearer token retrieved from the Operations Console. Include it in the `Authorization` header:
+
+[source,http]
+----
+Authorization: Bearer <token>
+----
+
+== Endpoints
+
+=== `POST /api/v1/clusters`
+
+Creates a new intelligence cluster.
+
+Request body:
+
+[source,json]
+----
+{
+  "name": "cobalt-alpha",
+  "blueprint": "cobalt",
+  "region": "us-central-1"
+}
+----
+
+=== `POST /api/v1/calibrations`
+
+Schedules a calibration run for the specified sensor cluster.
+
+[source,json]
+----
+{
+  "cluster_id": "sentinel-east",
+  "baseline": {
+    "temperature": 21.2,
+    "humidity": 35.0
+  }
+}
+----
+
+=== `GET /api/v1/units/{unit_id}/telemetry`
+
+Returns the current telemetry snapshot for a field unit.
+
+== Error Codes
+
+|===
+| Code | Meaning | Resolution
+
+| 401 | Token invalid | Refresh the bearer token.
+| 422 | Validation failed | Check required fields for the endpoint.
+| 503 | Control plane busy | Retry with exponential backoff.
+|===
+
+== Related Resources
+
+* xref:tutorials/first-boot.adoc[Tutorial: Boot Skainet Core]
+* xref:how-to/calibrate-sensors.adoc[How-to: Calibrate Sensor Array]

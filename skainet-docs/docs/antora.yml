@@ -1,0 +1,5 @@
+name: skainet
+title: Skainet Documentation
+version: latest
+nav:
+  - modules/ROOT/nav.adoc

@@ -1,0 +1,31 @@
+{{#if hero}}
+<section class="landing-hero">
+  <div class="landing-hero__inner">
+    <div class="landing-hero__content">
+{{#if hero.eyebrow}}
+      <p class="landing-hero__eyebrow">{{hero.eyebrow}}</p>
+{{/if}}
+{{#if hero.heading}}
+      <h1 class="landing-hero__title">{{hero.heading}}</h1>
+{{/if}}
+{{#if hero.body}}
+      <div class="landing-hero__summary">
+        {{{hero.body}}}
+      </div>
+{{/if}}
+{{#if hero.cta}}
+      <div class="landing-hero__actions">
+        <a class="landing-hero__cta landing-hero__cta--primary" href="{{relativize hero.cta.url}}">
+          {{hero.cta.label}}
+        </a>
+      </div>
+{{/if}}
+    </div>
+{{#if hero.image}}
+    <div class="landing-hero__media">
+      <img src="{{relativize hero.image.src}}" alt="{{hero.image.alt}}">
+    </div>
+{{/if}}
+  </div>
+</section>
+{{/if}}

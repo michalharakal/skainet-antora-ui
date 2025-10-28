@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+{{> head defaultPageTitle='Untitled'}}
+  </head>
+  <body class="article{{#with (or page.attributes.role page.role)}} {{{this}}}{{/with}}{{#if (or (ne (lookup page.attributes 'landing-page') undefined) (eq (lookup page.attributes 'type') 'landing-page'))}} landing-page{{/if}}">
+{{> header}}
+{{#if (or (ne (lookup page.attributes 'landing-page') undefined) (eq (lookup page.attributes 'type') 'landing-page'))}}
+{{> landing-body}}
+{{else}}
+{{> body}}
+{{/if}}
+{{> footer}}
+  </body>
+</html>

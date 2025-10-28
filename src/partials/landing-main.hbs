@@ -1,0 +1,19 @@
+{{#with (landing-page page) as |landing|}}
+<main class="landing-main landing-page">
+{{> toolbar}}
+  <div class="landing-main__content">
+{{#if landing.hero}}
+{{> landing-hero hero=landing.hero}}
+{{/if}}
+{{#if landing.values}}
+{{> landing-value-prop values=landing.values}}
+{{/if}}
+{{#if landing.body}}
+{{> landing-article body=landing.body page=../page}}
+{{/if}}
+{{#if landing.cta}}
+{{> landing-cta-card cta=landing.cta}}
+{{/if}}
+  </div>
+</main>
+{{/with}}

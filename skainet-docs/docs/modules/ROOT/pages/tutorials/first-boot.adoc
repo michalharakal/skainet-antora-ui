@@ -1,0 +1,34 @@
+= Boot Skainet Core
+:page-subtitle: Tutorial
+
+[abstract]
+This tutorial walks you through deploying a minimal Skainet intelligence cluster, registering a field unit, and validating initial sensor telemetry.
+
+== Prerequisites
+
+* Access to the Skainet Operations Console.
+* SSH connectivity to the target cluster nodes.
+* Administrative credentials for the Skainet control plane.
+
+== Step 1. Provision the Control Node
+
+. Create a new cluster from the Operations Console and select the *Cobalt* blueprint.
+. Download the generated bootstrap script and copy it to your control node.
+. Run the script and wait for the `Ready` status to appear in the console.
+
+== Step 2. Register the First Field Unit
+
+. On the console, open *Fleet > Add Unit*.
+. Scan or enter the unit provision token.
+. Confirm the unit appears with a green heartbeat indicator.
+
+== Step 3. Validate Telemetry Flow
+
+. Execute `skainet ctl status --details` from your workstation.
+. Verify the metrics stream displays `Sensors: nominal`.
+. Celebrate—your Skainet intelligence core is online.
+
+== Next Steps
+
+* xref:how-to/calibrate-sensors.adoc[Calibrate the sensor array] for mission readiness.
+* xref:reference/control-api.adoc[Review the Control API] to automate deployments.

@@ -1,0 +1,28 @@
+= Calibrate Sensor Array
+:page-subtitle: How-to Guide
+
+[abstract]
+Follow these steps whenever a Skainet sentinel grid reports drift in environmental readings.
+
+== Before You Begin
+
+* Completed xref:tutorials/first-boot.adoc[Boot Skainet Core tutorial].
+* Field units online and reachable.
+
+== Procedure
+
+. From the Operations Console, navigate to *Fleet > Calibration*.
+. Select the target sensor cluster and choose *Run Auto-Calibrate*.
+. Enter the ambient baseline values supplied by your field operators.
+. Monitor the rolling telemetry chart and wait for variance to fall below 2%.
+. Apply the calibration and store the snapshot.
+
+== Troubleshooting
+
+* If telemetry remains unstable, inspect unit firmware versions and apply available updates.
+* For persistent divergence, open a ticket with inference logs attached.
+
+== Related Information
+
+* xref:reference/control-api.adoc[Control API] for automating calibration routines.
+* xref:explanation/decision-core.adoc[Decision Core Overview] to understand how sensor inputs feed the inference stack.
